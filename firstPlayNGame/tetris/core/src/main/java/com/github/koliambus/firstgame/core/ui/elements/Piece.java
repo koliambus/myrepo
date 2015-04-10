@@ -13,6 +13,7 @@ public class Piece extends Layer {
 		this.color = color;
 		this.x = x;
 		this.y = y;
+		System.out.println(this);
 	}
 
 	@Override
@@ -24,5 +25,10 @@ public class Piece extends Layer {
 		surf.drawLine(x, y + PIXEL_SIZE, x + PIXEL_SIZE, y + PIXEL_SIZE, 1);
 		surf.drawLine(x + PIXEL_SIZE, y + PIXEL_SIZE, x + PIXEL_SIZE, y, 1);
 		surf.drawLine(x + PIXEL_SIZE, y, x, y, 1);
+	}
+	
+	@Override
+	public String toString() {
+		return "Piece: " + "color = " + color + "; x = " + x +"; y = " + y;
 	}
 }

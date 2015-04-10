@@ -8,7 +8,8 @@ public class LineFigure extends Figure {
 		super(color, rotate);
 		addPieces();
 		this.setOrigin(Piece.PIXEL_SIZE/2, Piece.PIXEL_SIZE * SIZE / 2);
-		this.setRotation((float) (Math.PI/2));
+		this.setRotation(rotate);
+		this.type = Figures.LineFigure;
 	}
 	
 	private void addPieces(){
