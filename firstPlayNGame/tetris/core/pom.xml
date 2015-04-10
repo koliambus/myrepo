@@ -19,6 +19,11 @@
       <artifactId>playn-scene</artifactId>
       <version>${playn.version}</version>
     </dependency>
+    <dependency>
+      <groupId>io.playn</groupId>
+      <artifactId>playn-java-swt</artifactId>
+      <version>${playn.version}</version>
+    </dependency>
   </dependencies>
 
   <build>
